@@ -59,3 +59,28 @@ button:active {
 .operator:active {
   background-color: rgb(254, 222, 161);
 }
+
+@media (max-width: 500px) {
+  #calculator {
+    width: 95%; /* Use almost the whole screen width */
+    border-radius: 10px;
+  }
+
+  #display {
+    font-size: 3rem; /* Shrink text so it doesn't overflow */
+    padding: 15px;
+  }
+
+  #keys {
+    gap: 8px; /* Tighter spacing */
+    padding: 15px;
+  }
+
+  button {
+    /* REMOVE the fixed 100px width/height */
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Keeps them perfectly circular/square */
+    font-size: 1.5rem; /* Smaller numbers */
+  }
+}
